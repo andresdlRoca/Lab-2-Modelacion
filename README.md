@@ -5,6 +5,9 @@ El objetivo de este laboratorio es hacer la simulacion de la ley de los grandes 
 - Python 3.10.^
 
 ## Dependencias
+- numpy
+- matplotlib
+
 
 ## Uso
 Simulacion de la ley debil de los numeros grandes

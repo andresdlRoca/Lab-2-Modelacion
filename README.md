@@ -7,7 +7,15 @@ El objetivo de este laboratorio es hacer la simulacion de la ley de los grandes 
 ## Dependencias
 
 ## Uso
+Simulacion de la ley debil de los numeros grandes
+(En Consola)
+```
+python leydebil.py
+```  
+Teorema del limite central
+```
 
+```
 
 ## Autores
 👤 Mario de Leon

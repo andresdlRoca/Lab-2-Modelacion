@@ -39,7 +39,7 @@ por la desviacion estandar. La distribucion uniforme en el intervalo (0,1)
 tiene una varianza teorica de sigma^2 = 1/12
 
 
-Frecuencia Relativa Acumulada (Funcion de Distribucion Empirica)
+Frecuencia Relativa Acumulada (FRA) (Funcion de Distribucion Empirica)
 
 Es una forma de representar la distribucion de datos observados en un 
 conjunto de valores. La idea es contar cuantos valores son menores o 

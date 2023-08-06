@@ -7,6 +7,7 @@ El objetivo de este laboratorio es hacer la simulacion de la ley de los grandes 
 ## Dependencias
 - numpy
 - matplotlib
+- scipy
 
 
 ## Uso
@@ -17,7 +18,7 @@ python leydebil.py
 ```  
 Teorema del limite central
 ```
-
+python teoremalimite.py
 ```
 
 ## Autores

@@ -7,6 +7,7 @@ van calculando las medias paciales.
 '''
 
 import numpy as np
+from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.pyplot as plt
 
 def calcular_medias_parciales(valores):
@@ -17,15 +18,17 @@ def calcular_medias_parciales(valores):
     return medias_parciales
 
 def graficar_medias_parciales(medias_parciales, media_teorica):
-    plt.figure(figsize=(10, 6))
-    plt.plot(range(1, len(medias_parciales) + 1), medias_parciales, label="Medias parciales")
-    plt.axhline(y=media_teorica, color='r', linestyle='--', label="Media teórica (ų)")
-    plt.xlabel("n")
-    plt.ylabel("Media")
-    plt.title("Ley débil de los grandes números")
-    plt.legend()
-    plt.grid(True)
-    plt.show()
+    with PdfPages('leydebil.pdf') as pdf:
+        plt.figure(figsize=(10, 6))
+        plt.plot(range(1, len(medias_parciales) + 1), medias_parciales, label="Medias parciales")
+        plt.axhline(y=media_teorica, color='r', linestyle='--', label="Media teórica (ų)")
+        plt.xlabel("n")
+        plt.ylabel("Media")
+        plt.title("Ley débil de los grandes números")
+        plt.legend()
+        plt.grid(True)
+        pdf.savefig()
+        plt.show()
 
 def main():
     n = 1000000  # Cantidad de valores aleatorios a generar
